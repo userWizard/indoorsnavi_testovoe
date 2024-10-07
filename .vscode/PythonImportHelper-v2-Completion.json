@@ -1,0 +1,733 @@
+[
+    {
+        "label": "viewsets",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "permissions",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "PageNumberPagination",
+        "importPath": "rest_framework.pagination",
+        "description": "rest_framework.pagination",
+        "isExtraImport": true,
+        "detail": "rest_framework.pagination",
+        "documentation": {}
+    },
+    {
+        "label": "PageNumberPagination",
+        "importPath": "rest_framework.pagination",
+        "description": "rest_framework.pagination",
+        "isExtraImport": true,
+        "detail": "rest_framework.pagination",
+        "documentation": {}
+    },
+    {
+        "label": "CatsModel",
+        "importPath": "src.cats.models.cats",
+        "description": "src.cats.models.cats",
+        "isExtraImport": true,
+        "detail": "src.cats.models.cats",
+        "documentation": {}
+    },
+    {
+        "label": "CatsModel",
+        "importPath": "src.cats.models.cats",
+        "description": "src.cats.models.cats",
+        "isExtraImport": true,
+        "detail": "src.cats.models.cats",
+        "documentation": {}
+    },
+    {
+        "label": "CatsModel",
+        "importPath": "src.cats.models.cats",
+        "description": "src.cats.models.cats",
+        "isExtraImport": true,
+        "detail": "src.cats.models.cats",
+        "documentation": {}
+    },
+    {
+        "label": "CatsSerializer",
+        "importPath": "src.api.v1.cats.shemas.cats",
+        "description": "src.api.v1.cats.shemas.cats",
+        "isExtraImport": true,
+        "detail": "src.api.v1.cats.shemas.cats",
+        "documentation": {}
+    },
+    {
+        "label": "CreateCatsSerializer",
+        "importPath": "src.api.v1.cats.shemas.cats",
+        "description": "src.api.v1.cats.shemas.cats",
+        "isExtraImport": true,
+        "detail": "src.api.v1.cats.shemas.cats",
+        "documentation": {}
+    },
+    {
+        "label": "AuthorOrReadOnly",
+        "importPath": "src.api.v1.permissions",
+        "description": "src.api.v1.permissions",
+        "isExtraImport": true,
+        "detail": "src.api.v1.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "AuthorOrReadOnly",
+        "importPath": "src.api.v1.permissions",
+        "description": "src.api.v1.permissions",
+        "isExtraImport": true,
+        "detail": "src.api.v1.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "ModelViewSet",
+        "importPath": "rest_framework.viewsets",
+        "description": "rest_framework.viewsets",
+        "isExtraImport": true,
+        "detail": "rest_framework.viewsets",
+        "documentation": {}
+    },
+    {
+        "label": "AllowAny",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "SAFE_METHODS",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "BasePermission",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "UserCreateSerializer",
+        "importPath": "src.api.v1.users.shemas.users",
+        "description": "src.api.v1.users.shemas.users",
+        "isExtraImport": true,
+        "detail": "src.api.v1.users.shemas.users",
+        "documentation": {}
+    },
+    {
+        "label": "UserSerializer",
+        "importPath": "src.api.v1.users.shemas.users",
+        "description": "src.api.v1.users.shemas.users",
+        "isExtraImport": true,
+        "detail": "src.api.v1.users.shemas.users",
+        "documentation": {}
+    },
+    {
+        "label": "UserModel",
+        "importPath": "src.users.models.users",
+        "description": "src.users.models.users",
+        "isExtraImport": true,
+        "detail": "src.users.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "UserModel",
+        "importPath": "src.users.models.users",
+        "description": "src.users.models.users",
+        "isExtraImport": true,
+        "detail": "src.users.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "UserModel",
+        "importPath": "src.users.models.users",
+        "description": "src.users.models.users",
+        "isExtraImport": true,
+        "detail": "src.users.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "UserModel",
+        "importPath": "src.users.models.users",
+        "description": "src.users.models.users",
+        "isExtraImport": true,
+        "detail": "src.users.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "DefaultRouter",
+        "importPath": "rest_framework.routers",
+        "description": "rest_framework.routers",
+        "isExtraImport": true,
+        "detail": "rest_framework.routers",
+        "documentation": {}
+    },
+    {
+        "label": "UserViewSet",
+        "importPath": "src.api.v1.users.handlers.users",
+        "description": "src.api.v1.users.handlers.users",
+        "isExtraImport": true,
+        "detail": "src.api.v1.users.handlers.users",
+        "documentation": {}
+    },
+    {
+        "label": "CatsViewSet",
+        "importPath": "src.api.v1.cats.handlers.cats",
+        "description": "src.api.v1.cats.handlers.cats",
+        "isExtraImport": true,
+        "detail": "src.api.v1.cats.handlers.cats",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "TimedBaseModel",
+        "importPath": "src.common.models",
+        "description": "src.common.models",
+        "isExtraImport": true,
+        "detail": "src.common.models",
+        "documentation": {}
+    },
+    {
+        "label": "TimedBaseModel",
+        "importPath": "src.common.models",
+        "description": "src.common.models",
+        "isExtraImport": true,
+        "detail": "src.common.models",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "environ",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "environ",
+        "description": "environ",
+        "detail": "environ",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "CatsViewSet",
+        "kind": 6,
+        "importPath": "src.api.v1.cats.handlers.cats",
+        "description": "src.api.v1.cats.handlers.cats",
+        "peekOfCode": "class CatsViewSet(viewsets.ModelViewSet):\n    '''ViewSet for cats.'''\n    queryset = CatsModel.objects.all()\n    serializer_class = CreateCatsSerializer()\n    pagination_class = PageNumberPagination\n    permission_classes = (AuthorOrReadOnly,)\n    def get_serializer_class(self):\n        if self.action == 'create':\n            return CreateCatsSerializer\n        return CatsSerializer",
+        "detail": "src.api.v1.cats.handlers.cats",
+        "documentation": {}
+    },
+    {
+        "label": "CatsSerializer",
+        "kind": 6,
+        "importPath": "src.api.v1.cats.shemas.cats",
+        "description": "src.api.v1.cats.shemas.cats",
+        "peekOfCode": "class CatsSerializer(serializers.ModelSerializer):\n    '''Serializer for Cats model.'''\n    class Meta:\n        model = CatsModel\n        field = ('__all__',)\nclass CreateCatsSerializer(serializers.ModelSerializer):\n    '''Serializer for create cats model.'''\n    class Meta:\n        model = CatsModel\n        field = ('__all__',)",
+        "detail": "src.api.v1.cats.shemas.cats",
+        "documentation": {}
+    },
+    {
+        "label": "CreateCatsSerializer",
+        "kind": 6,
+        "importPath": "src.api.v1.cats.shemas.cats",
+        "description": "src.api.v1.cats.shemas.cats",
+        "peekOfCode": "class CreateCatsSerializer(serializers.ModelSerializer):\n    '''Serializer for create cats model.'''\n    class Meta:\n        model = CatsModel\n        field = ('__all__',)\n    def create(self, validated_data):\n        return CatsModel.objects.create(**validated_data)",
+        "detail": "src.api.v1.cats.shemas.cats",
+        "documentation": {}
+    },
+    {
+        "label": "UserViewSet",
+        "kind": 6,
+        "importPath": "src.api.v1.users.handlers.users",
+        "description": "src.api.v1.users.handlers.users",
+        "peekOfCode": "class UserViewSet(ModelViewSet):\n    '''ViewSet for users.'''\n    queryset = UserModel.objects.all()\n    serializer_class = UserCreateSerializer()\n    pagination_class = PageNumberPagination\n    permissions_classes = (AllowAny,)\n    def get_serializer_class(self):\n        if self.action == 'create':\n            return UserCreateSerializer\n        return UserSerializer",
+        "detail": "src.api.v1.users.handlers.users",
+        "documentation": {}
+    },
+    {
+        "label": "UserSerializer",
+        "kind": 6,
+        "importPath": "src.api.v1.users.shemas.users",
+        "description": "src.api.v1.users.shemas.users",
+        "peekOfCode": "class UserSerializer(serializers.ModelSerializer):\n    '''Serializer for users'''\n    class Meta:\n        model = UserModel\n        fields = ('__all__')\nclass UserCreateSerializer(serializers.ModelSerializer):\n    '''Serializer for create users'''\n    class Meta:\n        model = UserModel\n        fields = ('__all__')",
+        "detail": "src.api.v1.users.shemas.users",
+        "documentation": {}
+    },
+    {
+        "label": "UserCreateSerializer",
+        "kind": 6,
+        "importPath": "src.api.v1.users.shemas.users",
+        "description": "src.api.v1.users.shemas.users",
+        "peekOfCode": "class UserCreateSerializer(serializers.ModelSerializer):\n    '''Serializer for create users'''\n    class Meta:\n        model = UserModel\n        fields = ('__all__')\n    def create(self, validated_data):\n        return UserModel.objects.create(**validated_data)",
+        "detail": "src.api.v1.users.shemas.users",
+        "documentation": {}
+    },
+    {
+        "label": "AuthorOrReadOnly",
+        "kind": 6,
+        "importPath": "src.api.v1.permissions",
+        "description": "src.api.v1.permissions",
+        "peekOfCode": "class AuthorOrReadOnly(BasePermission):\n    '''Custom persmission for authors only. Or read-only.'''\n    def has_object_permission(self, request, view, obj):\n        return (request.method in SAFE_METHODS\n                or obj.author == request.user)\n    def has_permission(self, request, view):\n        return (request.user.is_authenticated\n                or request.method in SAFE_METHODS)",
+        "detail": "src.api.v1.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "router_v1",
+        "kind": 5,
+        "importPath": "src.api.v1.urls",
+        "description": "src.api.v1.urls",
+        "peekOfCode": "router_v1 = DefaultRouter()\nrouter_v1.register(r'users', UserViewSet, basename='users')\nrouter_v1.register(r'cats', CatsViewSet, basename='cats')\nurlpatterns = [\n    path('', include(router_v1.urls)),\n]",
+        "detail": "src.api.v1.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "src.api.v1.urls",
+        "description": "src.api.v1.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', include(router_v1.urls)),\n]",
+        "detail": "src.api.v1.urls",
+        "documentation": {}
+    },
+    {
+        "label": "CatsModel",
+        "kind": 6,
+        "importPath": "src.cats.models.cats",
+        "description": "src.cats.models.cats",
+        "peekOfCode": "class CatsModel(TimedBaseModel):\n    '''Model for cats.'''\n    owner = models.ForeignKey(\n        UserModel,\n        on_delete=models.CASCADE,\n        related_name='cats',\n        verbose_name='Owner',\n    )\n    name = models.CharField(\n        verbose_name='Name',",
+        "detail": "src.cats.models.cats",
+        "documentation": {}
+    },
+    {
+        "label": "CatsAdmin",
+        "kind": 6,
+        "importPath": "src.cats.admin",
+        "description": "src.cats.admin",
+        "peekOfCode": "class CatsAdmin(admin.ModelAdmin):\n    list_display = (\n        'id',\n        'name',\n        'age',\n        'breed',\n        'hairines',\n        'created_at',\n        'updated_at',\n    )",
+        "detail": "src.cats.admin",
+        "documentation": {}
+    },
+    {
+        "label": "CatsConfig",
+        "kind": 6,
+        "importPath": "src.cats.apps",
+        "description": "src.cats.apps",
+        "peekOfCode": "class CatsConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'cats'",
+        "detail": "src.cats.apps",
+        "documentation": {}
+    },
+    {
+        "label": "TimedBaseModel",
+        "kind": 6,
+        "importPath": "src.common.models",
+        "description": "src.common.models",
+        "peekOfCode": "class TimedBaseModel(models.Model):\n    created_at = models.DateTimeField(\n        verbose_name='Дата создания',\n        auto_now_add=True,\n    )\n    updated_at = models.DateTimeField(\n        verbose_name='Дата обновления',\n        auto_now=True,\n    )\n    class Meta:",
+        "detail": "src.common.models",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "src.project.setttings.local",
+        "description": "src.project.setttings.local",
+        "peekOfCode": "DEBUG = True",
+        "detail": "src.project.setttings.local",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "src.project.setttings.settings",
+        "description": "src.project.setttings.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent.parent.parent\nenv = environ.Env()\nenviron.Env.read_env(BASE_DIR / '.env')\nSECRET_KEY = env('DJANGO_SECRET_KEY', default='mysecretkey')\nDEBUG = False\nALLOWED_HOSTS = []\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
+        "detail": "src.project.setttings.settings",
+        "documentation": {}
+    },
+    {
+        "label": "env",
+        "kind": 5,
+        "importPath": "src.project.setttings.settings",
+        "description": "src.project.setttings.settings",
+        "peekOfCode": "env = environ.Env()\nenviron.Env.read_env(BASE_DIR / '.env')\nSECRET_KEY = env('DJANGO_SECRET_KEY', default='mysecretkey')\nDEBUG = False\nALLOWED_HOSTS = []\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "src.project.setttings.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "src.project.setttings.settings",
+        "description": "src.project.setttings.settings",
+        "peekOfCode": "SECRET_KEY = env('DJANGO_SECRET_KEY', default='mysecretkey')\nDEBUG = False\nALLOWED_HOSTS = []\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "src.project.setttings.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "src.project.setttings.settings",
+        "description": "src.project.setttings.settings",
+        "peekOfCode": "DEBUG = False\nALLOWED_HOSTS = []\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'src.users.apps.UserConfig',",
+        "detail": "src.project.setttings.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "src.project.setttings.settings",
+        "description": "src.project.setttings.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'src.users.apps.UserConfig',\n    'src.cats.apps.CatsConfig',",
+        "detail": "src.project.setttings.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "src.project.setttings.settings",
+        "description": "src.project.setttings.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'src.users.apps.UserConfig',\n    'src.cats.apps.CatsConfig',\n    'rest_framework',",
+        "detail": "src.project.setttings.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "src.project.setttings.settings",
+        "description": "src.project.setttings.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'src.project.urls'",
+        "detail": "src.project.setttings.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "src.project.setttings.settings",
+        "description": "src.project.setttings.settings",
+        "peekOfCode": "ROOT_URLCONF = 'src.project.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "src.project.setttings.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "src.project.setttings.settings",
+        "description": "src.project.setttings.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "src.project.setttings.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "src.project.setttings.settings",
+        "description": "src.project.setttings.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'src.project.wsgi.application'\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\nAUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',",
+        "detail": "src.project.setttings.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "src.project.setttings.settings",
+        "description": "src.project.setttings.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\nAUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },",
+        "detail": "src.project.setttings.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "src.project.setttings.settings",
+        "description": "src.project.setttings.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "src.project.setttings.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "src.project.setttings.settings",
+        "description": "src.project.setttings.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'ru'\nTIME_ZONE = 'Europe/Moscow'\nUSE_I18N = True\nUSE_TZ = True\nSTATIC_URL = 'static/'\nAUTH_USER_MODEL = 'src.users.UserModel'\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "src.project.setttings.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "src.project.setttings.settings",
+        "description": "src.project.setttings.settings",
+        "peekOfCode": "TIME_ZONE = 'Europe/Moscow'\nUSE_I18N = True\nUSE_TZ = True\nSTATIC_URL = 'static/'\nAUTH_USER_MODEL = 'src.users.UserModel'\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "src.project.setttings.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "src.project.setttings.settings",
+        "description": "src.project.setttings.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\nSTATIC_URL = 'static/'\nAUTH_USER_MODEL = 'src.users.UserModel'\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "src.project.setttings.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "src.project.setttings.settings",
+        "description": "src.project.setttings.settings",
+        "peekOfCode": "USE_TZ = True\nSTATIC_URL = 'static/'\nAUTH_USER_MODEL = 'src.users.UserModel'\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "src.project.setttings.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "src.project.setttings.settings",
+        "description": "src.project.setttings.settings",
+        "peekOfCode": "STATIC_URL = 'static/'\nAUTH_USER_MODEL = 'src.users.UserModel'\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "src.project.setttings.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_USER_MODEL",
+        "kind": 5,
+        "importPath": "src.project.setttings.settings",
+        "description": "src.project.setttings.settings",
+        "peekOfCode": "AUTH_USER_MODEL = 'src.users.UserModel'\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "src.project.setttings.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "src.project.setttings.settings",
+        "description": "src.project.setttings.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "src.project.setttings.settings",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "src.project.asgi",
+        "description": "src.project.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "src.project.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "src.project.urls",
+        "description": "src.project.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('api/', include('api.v1.urls'))\n]",
+        "detail": "src.project.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "src.project.wsgi",
+        "description": "src.project.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "src.project.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "UserModel",
+        "kind": 6,
+        "importPath": "src.users.models.users",
+        "description": "src.users.models.users",
+        "peekOfCode": "class UserModel(TimedBaseModel):\n    '''Model for users.'''\n    username = models.CharField(\n        verbose_name='Username',\n        max_length=25,\n        unique=True,\n        blank=False,\n        null=False,\n    )\n    email = models.EmailField(",
+        "detail": "src.users.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "UserAdmin",
+        "kind": 6,
+        "importPath": "src.users.admin",
+        "description": "src.users.admin",
+        "peekOfCode": "class UserAdmin(admin.ModelAdmin):\n    list_display = ('id', 'username', 'email', 'created_at', 'updated_at')",
+        "detail": "src.users.admin",
+        "documentation": {}
+    },
+    {
+        "label": "UsersConfig",
+        "kind": 6,
+        "importPath": "src.users.apps",
+        "description": "src.users.apps",
+        "peekOfCode": "class UsersConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'users'",
+        "detail": "src.users.apps",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "manage",
+        "description": "manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault(\n        'DJANGO_SETTINGS_MODULE',\n        'src.project.settings.settings'\n    )\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(",
+        "detail": "manage",
+        "documentation": {}
+    }
+]
