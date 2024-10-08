@@ -21,12 +21,14 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'daphne',
     'django.contrib.staticfiles',
 
     'src.users.apps.UsersConfig',
     'src.cats.apps.CatsConfig',
 
     'rest_framework',
+    'channels',
 ]
 
 MIDDLEWARE = [
@@ -58,7 +60,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'src.project.wsgi.application'
-
+ASGI_APPLICATION = 'src.project.asgi.application'
 
 DATABASES = {
     'default': {

@@ -1,0 +1,21 @@
+version: '3.3'
+
+services:
+
+  db:
+    image: nouchka/sqlite3
+    volumes:
+      - sqlite_db_data:/var/sqlite
+
+  web:
+    build: .
+    restart: always
+    ports:
+     - "8000:8000"
+    volumes:
+     - .:/app
+    depends_on:
+      - db
+
+volumes:
+    sqlite_db_data:

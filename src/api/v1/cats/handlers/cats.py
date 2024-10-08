@@ -10,7 +10,7 @@ from src.api.v1.permissions import OwnerOrReadOnly
 
 class CatsViewSet(viewsets.ModelViewSet):
     '''ViewSet for cats.'''
-    queryset = CatsModel.objects.all()
+    queryset = CatsModel.objects.all().order_by('-pub_date')
     serializer_class = CreateCatsSerializer()
     pagination_class = PageNumberPagination
     permission_classes = (OwnerOrReadOnly,)
@@ -20,3 +20,6 @@ class CatsViewSet(viewsets.ModelViewSet):
         if self.action == 'create':
             return CreateCatsSerializer
         return CatsSerializer
+    
+    def get_queryset(self):
+        return CatsModel.objects.filter(owner=self.request.user)

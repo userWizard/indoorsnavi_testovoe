@@ -192,6 +192,14 @@
         "documentation": {}
     },
     {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
         "label": "include",
         "importPath": "django.urls",
         "description": "django.urls",
@@ -345,6 +353,31 @@
         "documentation": {}
     },
     {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncWebsocketConsumer",
+        "importPath": "channels.generic.websocket",
+        "description": "channels.generic.websocket",
+        "isExtraImport": true,
+        "detail": "channels.generic.websocket",
+        "documentation": {}
+    },
+    {
+        "label": "ChatConsumer",
+        "importPath": "src.consumers.chats",
+        "description": "src.consumers.chats",
+        "isExtraImport": true,
+        "detail": "src.consumers.chats",
+        "documentation": {}
+    },
+    {
         "label": "Path",
         "importPath": "pathlib",
         "description": "pathlib",
@@ -371,11 +404,43 @@
         "documentation": {}
     },
     {
+        "label": "ProtocolTypeRouter",
+        "importPath": "channels.routing",
+        "description": "channels.routing",
+        "isExtraImport": true,
+        "detail": "channels.routing",
+        "documentation": {}
+    },
+    {
+        "label": "URLRouter",
+        "importPath": "channels.routing",
+        "description": "channels.routing",
+        "isExtraImport": true,
+        "detail": "channels.routing",
+        "documentation": {}
+    },
+    {
         "label": "get_asgi_application",
         "importPath": "django.core.asgi",
         "description": "django.core.asgi",
         "isExtraImport": true,
         "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "AuthMiddlewareStack",
+        "importPath": "channels.auth",
+        "description": "channels.auth",
+        "isExtraImport": true,
+        "detail": "channels.auth",
+        "documentation": {}
+    },
+    {
+        "label": "ws_urlpatterns",
+        "importPath": "src.consumers.routers",
+        "description": "src.consumers.routers",
+        "isExtraImport": true,
+        "detail": "src.consumers.routers",
         "documentation": {}
     },
     {
@@ -400,7 +465,7 @@
         "kind": 6,
         "importPath": "src.api.v1.cats.handlers.cats",
         "description": "src.api.v1.cats.handlers.cats",
-        "peekOfCode": "class CatsViewSet(viewsets.ModelViewSet):\n    '''ViewSet for cats.'''\n    queryset = CatsModel.objects.all()\n    serializer_class = CreateCatsSerializer()\n    pagination_class = PageNumberPagination\n    permission_classes = (OwnerOrReadOnly,)\n    def get_serializer_class(self):\n        if self.action == 'create':\n            return CreateCatsSerializer\n        return CatsSerializer",
+        "peekOfCode": "class CatsViewSet(viewsets.ModelViewSet):\n    '''ViewSet for cats.'''\n    queryset = CatsModel.objects.all().order_by('-pub_date')\n    serializer_class = CreateCatsSerializer()\n    pagination_class = PageNumberPagination\n    permission_classes = (OwnerOrReadOnly,)\n    def get_serializer_class(self):\n        if self.action == 'create':\n            return CreateCatsSerializer\n        return CatsSerializer",
         "detail": "src.api.v1.cats.handlers.cats",
         "documentation": {}
     },
@@ -522,6 +587,24 @@
         "documentation": {}
     },
     {
+        "label": "ChatConsumer",
+        "kind": 6,
+        "importPath": "src.consumers.chats",
+        "description": "src.consumers.chats",
+        "peekOfCode": "class ChatConsumer(AsyncWebsocketConsumer):\n    async def connect(self):\n        self.room_name = self.scope['url_route']['kwargs']['room_name']\n        self.room_group_name = 'chat_%' + self.room_name\n        await self.channel_layer.group_add(\n            self.room_group_name,\n            self.channel_name\n        )\n    async def disconnect(self, close_code):\n        await self.channel_layer.group_discard(",
+        "detail": "src.consumers.chats",
+        "documentation": {}
+    },
+    {
+        "label": "ws_urlpatterns",
+        "kind": 5,
+        "importPath": "src.consumers.routers",
+        "description": "src.consumers.routers",
+        "peekOfCode": "ws_urlpatterns = [\n    path('ws/api/v1/', ChatConsumer.as_asgi()),\n]",
+        "detail": "src.consumers.routers",
+        "documentation": {}
+    },
+    {
         "label": "DEBUG",
         "kind": 5,
         "importPath": "src.project.settings.local",
@@ -553,7 +636,7 @@
         "kind": 5,
         "importPath": "src.project.settings.settings",
         "description": "src.project.settings.settings",
-        "peekOfCode": "SECRET_KEY = env('DJANGO_SECRET_KEY', default='mysecretkey')\nDEBUG = True\nALLOWED_HOSTS = []\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "peekOfCode": "SECRET_KEY = env('DJANGO_SECRET_KEY', default='mysecretkey')\nDEBUG = True\nALLOWED_HOSTS = []\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'daphne',",
         "detail": "src.project.settings.settings",
         "documentation": {}
     },
@@ -562,7 +645,7 @@
         "kind": 5,
         "importPath": "src.project.settings.settings",
         "description": "src.project.settings.settings",
-        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'src.users.apps.UsersConfig',",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'daphne',\n    'django.contrib.staticfiles',",
         "detail": "src.project.settings.settings",
         "documentation": {}
     },
@@ -571,7 +654,7 @@
         "kind": 5,
         "importPath": "src.project.settings.settings",
         "description": "src.project.settings.settings",
-        "peekOfCode": "ALLOWED_HOSTS = []\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'src.users.apps.UsersConfig',\n    'src.cats.apps.CatsConfig',",
+        "peekOfCode": "ALLOWED_HOSTS = []\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'daphne',\n    'django.contrib.staticfiles',\n    'src.users.apps.UsersConfig',",
         "detail": "src.project.settings.settings",
         "documentation": {}
     },
@@ -580,7 +663,7 @@
         "kind": 5,
         "importPath": "src.project.settings.settings",
         "description": "src.project.settings.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'src.users.apps.UsersConfig',\n    'src.cats.apps.CatsConfig',\n    'rest_framework',",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'daphne',\n    'django.contrib.staticfiles',\n    'src.users.apps.UsersConfig',\n    'src.cats.apps.CatsConfig',",
         "detail": "src.project.settings.settings",
         "documentation": {}
     },
@@ -616,7 +699,16 @@
         "kind": 5,
         "importPath": "src.project.settings.settings",
         "description": "src.project.settings.settings",
-        "peekOfCode": "WSGI_APPLICATION = 'src.project.wsgi.application'\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\nAUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',",
+        "peekOfCode": "WSGI_APPLICATION = 'src.project.wsgi.application'\nASGI_APPLICATION = 'src.project.asgi.application'\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "src.project.settings.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ASGI_APPLICATION",
+        "kind": 5,
+        "importPath": "src.project.settings.settings",
+        "description": "src.project.settings.settings",
+        "peekOfCode": "ASGI_APPLICATION = 'src.project.asgi.application'\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\nAUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',",
         "detail": "src.project.settings.settings",
         "documentation": {}
     },
@@ -697,7 +789,7 @@
         "kind": 5,
         "importPath": "src.project.asgi",
         "description": "src.project.asgi",
-        "peekOfCode": "application = get_asgi_application()",
+        "peekOfCode": "application = ProtocolTypeRouter({\n    'http': get_asgi_application(),\n    'websocket':  AuthMiddlewareStack(\n        URLRouter(ws_urlpatterns)\n    )\n})",
         "detail": "src.project.asgi",
         "documentation": {}
     },
