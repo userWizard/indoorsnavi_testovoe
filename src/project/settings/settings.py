@@ -10,7 +10,7 @@ environ.Env.read_env(BASE_DIR / '.env')
 
 SECRET_KEY = env('DJANGO_SECRET_KEY', default='mysecretkey')
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 

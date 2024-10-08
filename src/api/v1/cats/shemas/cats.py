@@ -7,7 +7,7 @@ class CatsSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = CatsModel
-        field = ('__all__',)
+        fields = ('__all__')
 
 
 class CreateCatsSerializer(serializers.ModelSerializer):
@@ -15,7 +15,7 @@ class CreateCatsSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = CatsModel
-        field = ('__all__',)
+        fields = ('__all__')
 
     def create(self, validated_data):
         return CatsModel.objects.create(**validated_data)

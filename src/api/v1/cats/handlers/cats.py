@@ -6,14 +6,14 @@ from src.api.v1.cats.shemas.cats import (
     CatsSerializer,
     CreateCatsSerializer
 )
-from src.api.v1.permissions import AuthorOrReadOnly
+from src.api.v1.permissions import OwnerOrReadOnly
 
 class CatsViewSet(viewsets.ModelViewSet):
     '''ViewSet for cats.'''
     queryset = CatsModel.objects.all()
     serializer_class = CreateCatsSerializer()
     pagination_class = PageNumberPagination
-    permission_classes = (AuthorOrReadOnly,)
+    permission_classes = (OwnerOrReadOnly,)
     
     
     def get_serializer_class(self):

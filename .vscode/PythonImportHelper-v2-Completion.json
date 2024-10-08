@@ -16,14 +16,6 @@
         "documentation": {}
     },
     {
-        "label": "permissions",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
         "label": "serializers",
         "importPath": "rest_framework",
         "description": "rest_framework",
@@ -88,15 +80,7 @@
         "documentation": {}
     },
     {
-        "label": "AuthorOrReadOnly",
-        "importPath": "src.api.v1.permissions",
-        "description": "src.api.v1.permissions",
-        "isExtraImport": true,
-        "detail": "src.api.v1.permissions",
-        "documentation": {}
-    },
-    {
-        "label": "AuthorOrReadOnly",
+        "label": "OwnerOrReadOnly",
         "importPath": "src.api.v1.permissions",
         "description": "src.api.v1.permissions",
         "isExtraImport": true,
@@ -416,7 +400,7 @@
         "kind": 6,
         "importPath": "src.api.v1.cats.handlers.cats",
         "description": "src.api.v1.cats.handlers.cats",
-        "peekOfCode": "class CatsViewSet(viewsets.ModelViewSet):\n    '''ViewSet for cats.'''\n    queryset = CatsModel.objects.all()\n    serializer_class = CreateCatsSerializer()\n    pagination_class = PageNumberPagination\n    permission_classes = (AuthorOrReadOnly,)\n    def get_serializer_class(self):\n        if self.action == 'create':\n            return CreateCatsSerializer\n        return CatsSerializer",
+        "peekOfCode": "class CatsViewSet(viewsets.ModelViewSet):\n    '''ViewSet for cats.'''\n    queryset = CatsModel.objects.all()\n    serializer_class = CreateCatsSerializer()\n    pagination_class = PageNumberPagination\n    permission_classes = (OwnerOrReadOnly,)\n    def get_serializer_class(self):\n        if self.action == 'create':\n            return CreateCatsSerializer\n        return CatsSerializer",
         "detail": "src.api.v1.cats.handlers.cats",
         "documentation": {}
     },
@@ -425,7 +409,7 @@
         "kind": 6,
         "importPath": "src.api.v1.cats.shemas.cats",
         "description": "src.api.v1.cats.shemas.cats",
-        "peekOfCode": "class CatsSerializer(serializers.ModelSerializer):\n    '''Serializer for Cats model.'''\n    class Meta:\n        model = CatsModel\n        field = ('__all__',)\nclass CreateCatsSerializer(serializers.ModelSerializer):\n    '''Serializer for create cats model.'''\n    class Meta:\n        model = CatsModel\n        field = ('__all__',)",
+        "peekOfCode": "class CatsSerializer(serializers.ModelSerializer):\n    '''Serializer for Cats model.'''\n    class Meta:\n        model = CatsModel\n        fields = ('__all__')\nclass CreateCatsSerializer(serializers.ModelSerializer):\n    '''Serializer for create cats model.'''\n    class Meta:\n        model = CatsModel\n        fields = ('__all__')",
         "detail": "src.api.v1.cats.shemas.cats",
         "documentation": {}
     },
@@ -434,7 +418,7 @@
         "kind": 6,
         "importPath": "src.api.v1.cats.shemas.cats",
         "description": "src.api.v1.cats.shemas.cats",
-        "peekOfCode": "class CreateCatsSerializer(serializers.ModelSerializer):\n    '''Serializer for create cats model.'''\n    class Meta:\n        model = CatsModel\n        field = ('__all__',)\n    def create(self, validated_data):\n        return CatsModel.objects.create(**validated_data)",
+        "peekOfCode": "class CreateCatsSerializer(serializers.ModelSerializer):\n    '''Serializer for create cats model.'''\n    class Meta:\n        model = CatsModel\n        fields = ('__all__')\n    def create(self, validated_data):\n        return CatsModel.objects.create(**validated_data)",
         "detail": "src.api.v1.cats.shemas.cats",
         "documentation": {}
     },
@@ -466,11 +450,11 @@
         "documentation": {}
     },
     {
-        "label": "AuthorOrReadOnly",
+        "label": "OwnerOrReadOnly",
         "kind": 6,
         "importPath": "src.api.v1.permissions",
         "description": "src.api.v1.permissions",
-        "peekOfCode": "class AuthorOrReadOnly(BasePermission):\n    '''Custom persmission for authors only. Or read-only.'''\n    def has_object_permission(self, request, view, obj):\n        return (request.method in SAFE_METHODS\n                or obj.author == request.user)\n    def has_permission(self, request, view):\n        return (request.user.is_authenticated\n                or request.method in SAFE_METHODS)",
+        "peekOfCode": "class OwnerOrReadOnly(BasePermission):\n  '''Custom permission for owners only. Or read-only.'''\n  def has_object_permission(self, request, view, obj):\n    if request.method in SAFE_METHODS:\n      return True\n    return obj.owner == request.user\n  def has_permission(self, request, view):\n    return request.user.is_authenticated or request.method in SAFE_METHODS",
         "detail": "src.api.v1.permissions",
         "documentation": {}
     },
@@ -551,7 +535,7 @@
         "kind": 5,
         "importPath": "src.project.settings.settings",
         "description": "src.project.settings.settings",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent.parent.parent\nenv = environ.Env()\nenviron.Env.read_env(BASE_DIR / '.env')\nSECRET_KEY = env('DJANGO_SECRET_KEY', default='mysecretkey')\nDEBUG = False\nALLOWED_HOSTS = []\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent.parent.parent\nenv = environ.Env()\nenviron.Env.read_env(BASE_DIR / '.env')\nSECRET_KEY = env('DJANGO_SECRET_KEY', default='mysecretkey')\nDEBUG = True\nALLOWED_HOSTS = []\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
         "detail": "src.project.settings.settings",
         "documentation": {}
     },
@@ -560,7 +544,7 @@
         "kind": 5,
         "importPath": "src.project.settings.settings",
         "description": "src.project.settings.settings",
-        "peekOfCode": "env = environ.Env()\nenviron.Env.read_env(BASE_DIR / '.env')\nSECRET_KEY = env('DJANGO_SECRET_KEY', default='mysecretkey')\nDEBUG = False\nALLOWED_HOSTS = []\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "peekOfCode": "env = environ.Env()\nenviron.Env.read_env(BASE_DIR / '.env')\nSECRET_KEY = env('DJANGO_SECRET_KEY', default='mysecretkey')\nDEBUG = True\nALLOWED_HOSTS = []\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
         "detail": "src.project.settings.settings",
         "documentation": {}
     },
@@ -569,7 +553,7 @@
         "kind": 5,
         "importPath": "src.project.settings.settings",
         "description": "src.project.settings.settings",
-        "peekOfCode": "SECRET_KEY = env('DJANGO_SECRET_KEY', default='mysecretkey')\nDEBUG = False\nALLOWED_HOSTS = []\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "peekOfCode": "SECRET_KEY = env('DJANGO_SECRET_KEY', default='mysecretkey')\nDEBUG = True\nALLOWED_HOSTS = []\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
         "detail": "src.project.settings.settings",
         "documentation": {}
     },
@@ -578,7 +562,7 @@
         "kind": 5,
         "importPath": "src.project.settings.settings",
         "description": "src.project.settings.settings",
-        "peekOfCode": "DEBUG = False\nALLOWED_HOSTS = []\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'src.users.apps.UsersConfig',",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'src.users.apps.UsersConfig',",
         "detail": "src.project.settings.settings",
         "documentation": {}
     },
