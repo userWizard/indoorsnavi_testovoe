@@ -1,6 +1,6 @@
-import environ
-
 from pathlib import Path
+
+import environ
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent.parent
 
@@ -23,7 +23,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'src.users.apps.UserConfig',
+    'src.users.apps.UsersConfig',
     'src.cats.apps.CatsConfig',
 
     'rest_framework',
@@ -95,6 +95,6 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-AUTH_USER_MODEL = 'src.users.UserModel'
+# AUTH_USER_MODEL = 'src.users.models.users.UserModel'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

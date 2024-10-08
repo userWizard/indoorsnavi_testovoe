@@ -20,7 +20,6 @@ class CatsModel(TimedBaseModel):
     )
     age = models.PositiveIntegerField(
         verbose_name='Age',
-        max_digits=2,
         blank=False,
         null=False,
     )
