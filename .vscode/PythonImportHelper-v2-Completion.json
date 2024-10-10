@@ -465,7 +465,7 @@
         "kind": 6,
         "importPath": "src.api.v1.cats.handlers.cats",
         "description": "src.api.v1.cats.handlers.cats",
-        "peekOfCode": "class CatsViewSet(viewsets.ModelViewSet):\n    '''ViewSet for cats.'''\n    queryset = CatsModel.objects.all().order_by('-pub_date')\n    serializer_class = CreateCatsSerializer()\n    pagination_class = PageNumberPagination\n    permission_classes = (OwnerOrReadOnly,)\n    def get_serializer_class(self):\n        if self.action == 'create':\n            return CreateCatsSerializer\n        return CatsSerializer",
+        "peekOfCode": "class CatsViewSet(viewsets.ModelViewSet):\n    '''ViewSet for cats.'''\n    queryset = CatsModel.objects.all().order_by('-updated_at')\n    serializer_class = CreateCatsSerializer()\n    pagination_class = PageNumberPagination\n    permission_classes = (OwnerOrReadOnly,)\n    def get_serializer_class(self):\n        if self.action == 'create':\n            return CreateCatsSerializer\n        return CatsSerializer",
         "detail": "src.api.v1.cats.handlers.cats",
         "documentation": {}
     },
